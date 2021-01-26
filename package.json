@@ -1,0 +1,48 @@
+{
+  "name": "react-calendar",
+  "version": "1.0.0",
+  "description": "react codebase",
+  "main": "index.js",
+  "author": "qiqzhao",
+  "license": "ISC",
+  "scripts": {
+    "start": "webpack serve --mode development --open --hot",
+    "build": "webpack --mode production",
+    "lint": "eslint src --ext .jsx,.js",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-test-renderer": "^17.0.1",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "autoprefixer": "^10.2.1",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.17.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.22.0",
+    "history": "^4.10.1",
+    "html-webpack-plugin": "^4.5.1",
+    "husky": "^4.3.8",
+    "less-loader": "^7.2.1",
+    "postcss-loader": "^4.1.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.13.0",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.1"
+  }
+}
