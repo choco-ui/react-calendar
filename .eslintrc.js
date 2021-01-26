@@ -18,12 +18,12 @@ module.exports = {
 		"babel",
 		"react"
 	],
-	"ignorePatterns": [ "webpack.config.js", "postcss.config.js", ".eslintrc.js" ],
+	"ignorePatterns": [ "webpack.config.js", "postcss.config.js", ".eslintrc.js", "jest.config.js" ],
 	"rules": {
 		"semi": [ "error", "always" ],
-		"quotes": ["error", "single"],
-		"quote-props": ["error", "always"],
-		"jsx-quotes": ["error", "prefer-double"],
+		"quotes": [ "error", "single" ],
+		"quote-props": [ "error", "always" ],
+		"jsx-quotes": [ "error", "prefer-double" ],
 		"no-console": "error"
 	}
 };
