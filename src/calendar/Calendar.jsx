@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './Calendar.less';
 import { formatNumber, getDateByYearMonth, getDayText, getWeeksByFirstDay } from '../util.js';
+import './Calendar.less';
 
 const WEEK_NAMES = [ '日', '一', '二', '三', '四', '五', '六' ];
 const LINES = [ 1, 2, 3, 4, 5, 6 ];
@@ -43,9 +43,9 @@ const Calendar = () => {
 		<table className="table">
 			<caption>
 				<div className="caption-header">
-					<span className="arrow" onClick={ () => monthChange(-1) }>&#60;</span>
+					<span className="arrow prev" onClick={ () => monthChange(-1) }>&#60;</span>
 					<span>{ year } - { formatNumber(month) }</span>
-					<span className="arrow" onClick={ () => monthChange(1) }>&gt;</span>
+					<span className="arrow next" onClick={ () => monthChange(1) }>&gt;</span>
 				</div>
 			</caption>
 			<thead>

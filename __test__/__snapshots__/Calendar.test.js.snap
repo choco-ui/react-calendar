@@ -1,0 +1,448 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calendar component snapshot 1`] = `
+<table
+  className="table"
+>
+  <caption>
+    <div
+      className="caption-header"
+    >
+      <span
+        className="arrow prev"
+        onClick={[Function]}
+      >
+        &lt;
+      </span>
+      <span>
+        0
+         - 
+        01
+      </span>
+      <span
+        className="arrow next"
+        onClick={[Function]}
+      >
+        &gt;
+      </span>
+    </div>
+  </caption>
+  <thead>
+    <tr>
+      <td>
+        日
+      </td>
+      <td>
+        一
+      </td>
+      <td>
+        二
+      </td>
+      <td>
+        三
+      </td>
+      <td>
+        四
+      </td>
+      <td>
+        五
+      </td>
+      <td>
+        六
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        1
+      </td>
+    </tr>
+    <tr>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        2
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        3
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        4
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        5
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        6
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        7
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        8
+      </td>
+    </tr>
+    <tr>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        9
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        10
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        11
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        12
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        13
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        14
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        15
+      </td>
+    </tr>
+    <tr>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        16
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        17
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        18
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        19
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        20
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        21
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        22
+      </td>
+    </tr>
+    <tr>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        23
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        24
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        25
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        26
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        27
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        28
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        29
+      </td>
+    </tr>
+    <tr>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        30
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        31
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        
+      </td>
+      <td
+        style={
+          Object {
+            "color": "#000",
+          }
+        }
+      >
+        
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
