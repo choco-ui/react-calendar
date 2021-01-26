@@ -1,19 +1,21 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-
-let config = {
-	entry: "./src/index.jsx",
+module.exports = {
+	entry: './src/index.js',
+	mode: 'production',
 	output: {
-		path: path.resolve(__dirname, "dist"),
-		filename: "bundle.js",
-		publicPath: "/"
+		filename: 'index.js',
+		path: __dirname + '/dist',
+		libraryTarget: 'umd',
 	},
+
+	resolve: {
+		extensions: [ '.js', '.jsx', ],
+	},
+
 	module: {
 		rules: [
 			{
-				test: /\.jsx$/,
-				exclude: /node_module/,
-				use: "babel-loader"
+				test: /\.jsx?$/,
+				loader: 'babel-loader',
 			},
 			{
 				test: /\.(le|c)ss$/,
@@ -27,16 +29,21 @@ let config = {
 					},
 				]
 			}
-		]
+		],
 	},
-	devServer: {
-		historyApiFallback: true,
-	},
-	plugins: [
-		new HtmlWebpackPlugin({
-			template: "src/index.html"
-		})
-	]
-};
 
-module.exports = config;
+	externals: {
+		react: {
+			root: 'React',
+			commonjs2: 'react',
+			commonjs: 'react',
+			amd: 'react',
+		},
+		'react-dom': {
+			root: 'ReactDOM',
+			commonjs2: 'react-dom',
+			commonjs: 'react-dom',
+			amd: 'react-dom',
+		},
+	},
+};
