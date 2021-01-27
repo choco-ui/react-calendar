@@ -1,11 +1,23 @@
 {
   "name": "@qiqzhao/react-calendar",
   "version": "0.0.0",
-  "description": "react codebase",
+  "description": "react calendar component",
   "author": "qiqzhao",
   "license": "ISC",
   "main": "dist/index.js",
   "source": "src/index.js",
+  "homepage": "https://github.com/choco-ui/react-calendar#readme.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/choco-ui/react-calendar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/choco-ui/react-calendar/issues"
+  },
+  "keywords": [
+    "react",
+    "calendar"
+  ],
   "scripts": {
     "start": "webpack serve --mode development --open --hot",
     "build": "webpack --mode production",
