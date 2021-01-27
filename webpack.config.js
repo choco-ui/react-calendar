@@ -1,16 +1,13 @@
 module.exports = {
 	entry: './src/index.js',
-	mode: 'production',
 	output: {
 		filename: 'index.js',
 		path: __dirname + '/dist',
 		libraryTarget: 'umd',
 	},
-
 	resolve: {
 		extensions: [ '.js', '.jsx', ],
 	},
-
 	module: {
 		rules: [
 			{
@@ -31,7 +28,6 @@ module.exports = {
 			}
 		],
 	},
-
 	externals: {
 		react: {
 			root: 'React',
