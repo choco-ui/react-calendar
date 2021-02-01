@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { formatNumber, getDateByYearMonth, getWeeksByFirstDay } from '../util.js';
 import './Calendar.less';
+import PropTypes from 'prop-types';
 
 const WEEK_NAMES = [ '日', '一', '二', '三', '四', '五', '六' ];
 const LINES = [ 1, 2, 3, 4, 5, 6 ];
 const MONTH_DAYS = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
 
 
-const Calendar = () => {
+const Calendar = (props) => {
 
 	const [ year, setYear ] = useState(0);
 	const [ month, setMonth ] = useState(0);
-	const [ currentDate ] = useState(new Date());
+	const [ currentDate ] = useState(props.date || new Date());
 	const monthDays = MONTH_DAYS[month];
 	const weekDay = getWeeksByFirstDay(year, month);
 
@@ -83,6 +84,10 @@ const Calendar = () => {
 			</tbody>
 		</table>
 	);
+};
+
+Calendar.propTypes = {
+	'date': PropTypes.Date,
 };
 
 export default Calendar;
