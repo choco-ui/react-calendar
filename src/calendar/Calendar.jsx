@@ -7,7 +7,6 @@ const WEEK_NAMES = [ '日', '一', '二', '三', '四', '五', '六' ];
 const LINES = [ 1, 2, 3, 4, 5, 6 ];
 const MONTH_DAYS = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
 
-
 const Calendar = (props) => {
 
 	const [ year, setYear ] = useState(0);
@@ -18,7 +17,7 @@ const Calendar = (props) => {
 
 	const getDayText = (line, weekIndex, weekDay, monthDays) => {
 		const number = line * 7 + weekIndex - weekDay + 1;
-		return number <= 0 || number > monthDays ? '<span>&nbsp;</span>' : number;
+		return number <= 0 || number > monthDays ? (<span>&nbsp;</span>) : number;
 	};
 
 	const isToday = (line, weekIndex, weekDay, monthDays) => {
@@ -87,7 +86,7 @@ const Calendar = (props) => {
 };
 
 Calendar.propTypes = {
-	'date': PropTypes.Date,
+	'date': PropTypes.any,
 };
 
 export default Calendar;
