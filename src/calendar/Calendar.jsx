@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { formatNumber, getDateByYearMonth, getDayText, getWeeksByFirstDay } from '../util.js';
+import React, { useEffect, useState } from 'react';
+import { formatNumber, getDateByYearMonth, getWeeksByFirstDay } from '../util.js';
 import './Calendar.less';
 
 const WEEK_NAMES = [ '日', '一', '二', '三', '四', '五', '六' ];
 const LINES = [ 1, 2, 3, 4, 5, 6 ];
 const MONTH_DAYS = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
+
 
 const Calendar = () => {
 
@@ -13,6 +14,11 @@ const Calendar = () => {
 	const [ currentDate ] = useState(new Date());
 	const monthDays = MONTH_DAYS[month];
 	const weekDay = getWeeksByFirstDay(year, month);
+
+	const getDayText = (line, weekIndex, weekDay, monthDays) => {
+		const number = line * 7 + weekIndex - weekDay + 1;
+		return number <= 0 || number > monthDays ? '<span>&nbsp</span>' : number;
+	};
 
 	const isToday = (line, weekIndex, weekDay, monthDays) => {
 		const day = getDayText(line, weekIndex, weekDay, monthDays);

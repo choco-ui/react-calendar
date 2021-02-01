@@ -14,7 +14,3 @@ export const getWeeksByFirstDay = (year, month) => {
 	return getDateByYearMonth(year, month).getDay();
 };
 
-export const getDayText = (line, weekIndex, weekDay, monthDays) => {
-	const number = line * 7 + weekIndex - weekDay + 1;
-	return number <= 0 || number > monthDays ? '' : number;
-};
