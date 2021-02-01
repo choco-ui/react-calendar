@@ -17,7 +17,7 @@ const Calendar = () => {
 
 	const getDayText = (line, weekIndex, weekDay, monthDays) => {
 		const number = line * 7 + weekIndex - weekDay + 1;
-		return number <= 0 || number > monthDays ? '<span>&nbsp</span>' : number;
+		return number <= 0 || number > monthDays ? '<span>&nbsp;</span>' : number;
 	};
 
 	const isToday = (line, weekIndex, weekDay, monthDays) => {

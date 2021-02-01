@@ -11,7 +11,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@qiqzhao/react-calendar": "^0.0.0",
+    "@qiqzhao/react-calendar": "^0.0.3",
     "axios": "^0.21.1",
     "babel-jest": "^26.6.3",
     "jest": "^26.6.3",
