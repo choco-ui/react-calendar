@@ -5,7 +5,7 @@ import Calendar from "@qiqzhao/react-calendar";
 const App = () => (
 	<>
 		<div>Hello</div>
-		<Calendar />
+		<Calendar date={new Date(999999999999)} />
 	</>
 );
 
